@@ -5,25 +5,115 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css" type="text/css">
-    <script src="https://cdn.jwplayer.com/libraries/ePlUqNzZ.js"></script>
+    <!-- <script src="https://cdn.jwplayer.com/libraries/ePlUqNzZ.js"></script> -->
     <title>JW Player</title>
 </head>
-<body>gsgrsg
+<body>
 
     <img id="logo" src="logo.png" alt="JW Player Logo">
 
-    <!-- <div itemscope itemtype="https://schema.org/VideoObject">
-        <meta itemprop="uploadDate" content="Tue Jun 07 2022 14:45:38 GMT+0000 (Coordinated Universal Time)"/>
-        <meta itemprop="name" content="Forbiggerblazes"/>
-        <meta itemprop="duration" content="P0Y0M0DT0H0M15S" />
-        <meta itemprop="thumbnailUrl" content="https://cdn.jwplayer.com/thumbs/hymxXQ3x-720.jpg"/>
-        <meta itemprop="contentUrl" content="https://content.jwplatform.com/videos/hymxXQ3x-Aj1ssrD4.m4a"/>
-        <script src="https://cdn.jwplayer.com/players/hymxXQ3x-E1mBnXaZ.js"></script>
-    </div> -->
-
-    <div id="myplayer"></div>
+    <!-- <div id="myplayer" class="jw-title"></div> -->
 
     <script src="app.js"></script>
 
 </body>
 </html>
+
+<!-- GENERATED WITH DOCS API -->
+<!-- <!DOCTYPE html>
+<html>
+  <head prefix="og:http://ogp.me/ns#">
+    <title>New Title delivered via APIII</title>
+    <meta charset="utf-8">
+    <meta property="og:url" content="https://content.jwplatform.com/previews/xLfyEXIR-ePlUqNzZ">
+    <meta property="og:title" content="New Title delivered via APIII">
+    <meta property="og:image" content="https://assets-jpcust.jwpsrv.com/thumbs/xLfyEXIR-720.jpg">
+    <meta property="og:type" content="video">
+    <meta property="og:video" content="https://content.jwplatform.com/videos/xLfyEXIR-NomUFj5i.mp4">
+    <meta property="og:video:secure_url" content="https://content.jwplatform.com/videos/xLfyEXIR-NomUFj5i.mp4">
+    <meta property="og:video:type" content="video/mp4">
+    <meta property="og:video:width" content="640">
+    <meta property="og:video:height" content="360">
+    <meta name="twitter:card" content="player">
+    <meta name="twitter:player" content="https://content.jwplatform.com/players/xLfyEXIR-ePlUqNzZ.html">
+    <meta name="twitter:player:width" content="640">
+    <meta name="twitter:player:height" content="360">
+    <meta name="twitter:player:stream" content="https://content.jwplatform.com/videos/xLfyEXIR-640.mp4">
+    <meta name="twitter:player:stream:content_type" content="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
+    <style type="text/css">
+        body { background: #2f3542; color: #FFF; font: 1rem/1.5 Arial, sans-serif; margin: 0 auto; padding: 0; overflow: hidden }
+        #title, #description { display: none; font-weight: normal; -webkit-font-smoothing: antialiased }
+        #title { font-size: 24px; margin: 40px auto 10px }
+        #description { color: #aab4c8; font-size: 14px; margin: 15px auto }
+    </style>
+    <script type="text/javascript">
+    </script>
+  </head>
+  <body>
+    <h1 id="title">New Title delivered via APIII</h1>
+    <div id="botr_xLfyEXIR_ePlUqNzZ_div"></div>
+    <p id="description"></p>
+    <script>
+        (function() {
+            var head = document.head;
+            var script;
+            function setupPlayer(w, h) {
+                if (script) return;
+                script = document.createElement('script');
+                script.async = 1;
+                script.src = "https://content.jwplatform.com/players/xLfyEXIR-ePlUqNzZ.js";
+                head.appendChild(script);
+                if (w && h) {
+                    var interval = setInterval(function() {
+                        var jwplayer = window.jwplayer;
+                        if (jwplayer && jwplayer('botr_xLfyEXIR_ePlUqNzZ_div')) {
+                            clearInterval(interval);
+                            jwplayer('botr_xLfyEXIR_ePlUqNzZ_div').on('ready', function(){this.resize(w, h);});
+                        }
+                    }, 100);
+                }
+            }
+            function setMeta(name, value) {
+                var meta = window.document.querySelector('meta[property="' + name + '"]');
+                if (!meta) {
+                    meta = document.createElement('meta');
+                    meta.setAttribute('property', name);
+                    head.appendChild(meta);
+                }
+                meta.setAttribute('content', value);
+            }
+            if (window === window.top) {
+                document.getElementById("title").style.display = "block";
+                document.getElementById("description").style.display = "block";
+                document.body.style.width = "70%";
+                document.body.style.overflow = "visible";
+                setupPlayer();
+            } else {
+                var w = 0;
+                var h = 0;
+                /** Used to pass play/pause messages parent iframe via postMessage **/
+                window.addEventListener("message", function(evt) {
+                    var player = window.jwplayer ? window.jwplayer('botr_xLfyEXIR_ePlUqNzZ_div') : null;
+                    switch (evt.data) {
+                        case "play" && player:
+                            player.play();
+                            break;
+                        case "pause" && player:
+                            player.pause();
+                            break;
+                        default:
+                            if (evt.data.type && evt.data.type === 'page-meta' && !script) {
+                                setMeta('og:description', evt.data.description);
+                                setMeta('og:title', evt.data.title);
+                                setupPlayer(w, h);
+                            }
+                    }
+                });
+                window.addEventListener('load', function() {
+                    setTimeout(function() {setupPlayer(w, h);}, 100);
+                });
+            }
+        }());
+    </script>
+  </body>
+</html> -->
