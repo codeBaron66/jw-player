@@ -5,3 +5,11 @@ body{
     width: 200px;
     margin: 20px;
 }
+#container{
+    display: flex;
+}
+.card{
+    margin-right: 10px;
+    border: 1px solid #000;
+    text-align: center;
+}
