@@ -13,3 +13,14 @@ body{
     border: 1px solid #000;
     text-align: center;
 }
+
+
+/* CHANGE ICONS */
+.jw-svg-icon-play path {    
+    display: none;
+}
+.jw-svg-icon-play {
+    background-image: url('play.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
